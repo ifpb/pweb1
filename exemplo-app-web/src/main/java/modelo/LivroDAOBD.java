@@ -1,9 +1,6 @@
 package modelo;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -20,7 +17,22 @@ public class LivroDAOBD implements LivroDAO {
 		ConnectionFactory factory = new ConnectionFactory();
 		this.conexao = factory.getConnection();
 	}
-	
+
+	@Override
+	public List<String> recuperarISBNs() {
+		return null;
+	}
+
+	@Override
+	public List<String> recuperarISBNs(String autor) {
+		return null;
+	}
+
+	@Override
+	public List<Livro> buscarPorAutor(String autor) {
+		return null;
+	}
+
 	public List<Livro> listarLivros() {
 		List<Livro> livros = new ArrayList();
 		try {
@@ -38,23 +50,56 @@ public class LivroDAOBD implements LivroDAO {
 	}
 
 	public Optional<Livro> recuperarPorId(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		Optional<Livro> livro = Optional.empty();
+		try {
+			PreparedStatement statement = this.conexao.prepareStatement("SELECT * FROM livros WHERE id = ?");
+			statement.setLong(1, id);
+			ResultSet resultSet = statement.executeQuery();
+			while(resultSet.next()) {
+				livro = livro.of(new Livro(resultSet.getInt("id"), resultSet.getString("titulo"), resultSet.getString("isbn"), resultSet.getString("autor")));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return livro;
 	}
 
 	public Livro criarLivro(Livro livro) {
-		// TODO Auto-generated method stub
-		return null;
+		try {
+			PreparedStatement statement = this.conexao.prepareStatement("INSERT INTO livros (id, titulo, isbn, autor) VALUES (?,?,?,?) ");
+			statement.setLong(1, livro.getId());
+			statement.setString(2, livro.getTitulo());
+			statement.setString(3, livro.getIsbn());
+			statement.setString(4, livro.getAutor());
+			statement.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return livro;
 	}
 
 	public Livro atualizarLivro(Livro livro) {
-		// TODO Auto-generated method stub
-		return null;
+		try {
+			PreparedStatement statement = this.conexao.prepareStatement("UPDATE livros SET titulo = ?, isbn = ?, autor = ? WHERE id = ?");
+			statement.setString(1, livro.getTitulo());
+			statement.setString(2, livro.getIsbn());
+			statement.setString(3, livro.getAutor());
+			statement.setLong(4, livro.getId());
+			statement.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return livro;
 	}
 
 	public void removerLivro(Long id) {
-		// TODO Auto-generated method stub
-		
+		try {
+			PreparedStatement statement = this.conexao.prepareStatement("DELETE FROM livros WHERE id = ?");
+			statement.setLong(1, id);
+			statement.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

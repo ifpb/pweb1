@@ -7,6 +7,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import modelo.conexao.ConnectionFactory;
 
@@ -24,24 +26,40 @@ public class LivroDAOClasse implements LivroDAO {
 		return livros;
 	}
 
+	public List<String> recuperarISBNs() {
+		return livros.stream().map( (livro) -> livro.getIsbn()).collect(Collectors.toList());
+	}
+
+	public List<String> recuperarISBNs(String autor) {
+		return livros.stream().filter( (livro) -> livro.getAutor().equals(autor)).map( (livro) -> livro.getIsbn()).collect(Collectors.toList());
+	}
+
+	public List<Livro> buscarPorAutor(String autor) {
+		return livros.stream().filter( (livro) -> livro.getAutor().equals(autor) ).collect(Collectors.toList());
+	}
+
 	public Optional<Livro> recuperarPorId(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return livros.stream().filter( (livro) -> livro.getId().equals(id) ).findFirst();
 	}
 
 	public Livro criarLivro(Livro livro) {
-		// TODO Auto-generated method stub
-		return null;
+		livros.add(livro);
+		return livro;
 	}
 
-	public Livro atualizarLivro(Livro livro) {
-		// TODO Auto-generated method stub
-		return null;
+	public Livro atualizarLivro(Livro livroAtualizado) {
+		livros = livros.stream().map( (livro) ->  {
+			if (livro.getId().equals(livroAtualizado.getId())) {
+				return livroAtualizado;
+			} else {
+				return livro;
+			}
+		}).collect(Collectors.toList());
+		return livroAtualizado;
 	}
 
 	public void removerLivro(Long id) {
-		// TODO Auto-generated method stub
-		
+		livros = livros.stream().filter( livro -> !livro.getId().equals(id)).collect(Collectors.toList());
 	}
 	
 }
