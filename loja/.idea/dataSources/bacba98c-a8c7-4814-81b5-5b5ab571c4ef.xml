@@ -78,8 +78,8 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2019-05-22.17:30:54.386</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1003</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2019-05-23.20:46:00.549</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1006</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -125,85 +125,95 @@
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
-    <table id="23" parent="16" name="usuarios">
-      <ObjectId>24577</ObjectId>
+    <sequence id="23" parent="16" name="usuarios_id_seq">
+      <ObjectId>32768</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>1003</StateNumber>
+      <StateNumber>1006</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <table id="24" parent="16" name="usuarios">
+      <ObjectId>32770</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1006</StateNumber>
     </table>
-    <column id="24" parent="23" name="id">
+    <column id="25" parent="24" name="id">
       <Position>1</Position>
-      <DataType>bigint|0s</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1003</StateNumber>
-      <TypeId>20</TypeId>
+      <StateNumber>1006</StateNumber>
+      <DefaultExpression>nextval(&apos;usuarios_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>usuarios_id_seq</SequenceName>
     </column>
-    <column id="25" parent="23" name="primeironome">
+    <column id="26" parent="24" name="primeironome">
       <Position>2</Position>
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1003</StateNumber>
+      <StateNumber>1006</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="26" parent="23" name="ultimonome">
+    <column id="27" parent="24" name="ultimonome">
       <Position>3</Position>
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1003</StateNumber>
+      <StateNumber>1006</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="27" parent="23" name="datanascimento">
+    <column id="28" parent="24" name="datanascimento">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1003</StateNumber>
+      <StateNumber>1006</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="28" parent="23" name="genero">
+    <column id="29" parent="24" name="genero">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1003</StateNumber>
+      <StateNumber>1006</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="29" parent="23" name="telefone">
+    <column id="30" parent="24" name="telefone">
       <Position>6</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1003</StateNumber>
+      <StateNumber>1006</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="30" parent="23" name="senha">
+    <column id="31" parent="24" name="senha">
       <Position>7</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1003</StateNumber>
+      <StateNumber>1006</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="31" parent="23" name="email">
+    <column id="32" parent="24" name="email">
       <Position>8</Position>
       <DataType>varchar(200)|0s</DataType>
-      <StateNumber>1003</StateNumber>
+      <StateNumber>1006</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="32" parent="23" name="cidade">
+    <column id="33" parent="24" name="cidade">
       <Position>9</Position>
       <DataType>varchar(150)|0s</DataType>
-      <StateNumber>1003</StateNumber>
+      <StateNumber>1006</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="33" parent="23" name="pais">
+    <column id="34" parent="24" name="pais">
       <Position>10</Position>
       <DataType>varchar(100)|0s</DataType>
-      <StateNumber>1003</StateNumber>
+      <StateNumber>1006</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="34" parent="23" name="usuarios_pkey">
-      <ObjectId>24583</ObjectId>
+    <index id="35" parent="24" name="usuarios_pkey">
+      <ObjectId>32777</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="35" parent="23" name="usuarios_pkey">
-      <ObjectId>24584</ObjectId>
+    <key id="36" parent="24" name="usuarios_pkey">
+      <ObjectId>32778</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>usuarios_pkey</UnderlyingIndexName>
       <Primary>1</Primary>

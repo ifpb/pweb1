@@ -27,7 +27,6 @@ public class CadastroServlet extends HttpServlet  {
         usuario.setPais(req.getParameter("pais"));
         usuario.setPrimeiroNome(req.getParameter("primeiroNome"));
         usuario.setUltimoNome(req.getParameter("ultimoNome"));
-        usuario.setId(1l);
         usuario.setTelefone(req.getParameter("telefone"));
         usuario.setSenha(req.getParameter("senha"));
 

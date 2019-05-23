@@ -7,188 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b47060e2-247a-4f8b-a336-4d287affa678" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/banco.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/control/CadastroServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/conexao/ConnectionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/conexao/ConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/dao/UsuarioDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/entidades/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/material-icon/css/material-design-iconic-font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/material-icon/css/material-design-iconic-font.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/material-icon/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/material-icon/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/material-icon/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/Montserrat-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/Montserrat-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/Montserrat-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/Montserrat-ExtraLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/Montserrat-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/Montserrat-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/Montserrat-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/Montserrat-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/Montserrat-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/montserrat-v12-latin-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/montserrat-v12-latin-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/montserrat-v12-latin-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/montserrat-v12-latin-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/montserrat/montserrat-v12-latin-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/signup-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scss/common/extend.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scss/common/fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scss/common/global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scss/common/minxi.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scss/common/variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scss/layouts/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scss/layouts/responsive.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scss/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-ui/images/ui-icons_444444_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-ui/images/ui-icons_555555_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-ui/images/ui-icons_777620_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-ui/images/ui-icons_777777_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-ui/images/ui-icons_cc0000_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-ui/images/ui-icons_ffffff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-ui/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-ui/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-ui/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-ui/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/additional-methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_az.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_az.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_bg.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_bn_BD.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_bn_BD.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ca.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_cs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_da.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_de.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_el.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_es.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_es_AR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_es_AR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_es_PE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_es_PE.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_et.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_eu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_fa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_fa.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_fi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_fr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ge.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ge.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_gl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_he.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_hr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_hu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_hy_AM.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_hy_AM.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_id.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_is.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_is.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_it.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ja.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ka.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ka.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_kk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_kk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ko.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_lt.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_lv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_mk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_mk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_my.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_my.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_nl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_no.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_no.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_pl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_pt_BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_pt_BR.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_pt_PT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_pt_PT.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ro.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ru.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_si.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_si.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sr_lat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sr_lat.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_sv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_th.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_tj.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_tj.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_tr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_uk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ur.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_ur.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_vi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_zh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_zh.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_zh_TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/messages_zh_TW.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/methods_de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/methods_de.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/methods_es_CL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/methods_es_CL.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/methods_fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/methods_fi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/methods_nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/methods_nl.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/methods_pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-validation/dist/localization/methods_pt.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/banco.sql" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/banco.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/control/CadastroServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ifpb/control/CadastroServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -246,6 +67,16 @@
         <item name="loja: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="loja@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="loja: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="usuarios: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
       <path>
@@ -265,10 +96,12 @@
     <session id="-331107140">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -278,12 +111,14 @@
           <entry key="java" value="18" />
           <entry key="jsp" value="4" />
           <entry key="sql" value="5" />
+          <entry key="usuarios" value="1" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
+          <entry key="Database Element" value="1" />
           <entry key="HTML" value="1" />
           <entry key="JAVA" value="18" />
           <entry key="JSP" value="4" />
@@ -295,30 +130,30 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="3227" />
+          <entry key="java" value="3229" />
           <entry key="jsp" value="446" />
-          <entry key="sql" value="255" />
+          <entry key="sql" value="268" />
           <entry key="txt" value="4" />
           <entry key="xml" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3227" />
+          <entry key="JAVA" value="3229" />
           <entry key="JSP" value="446" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="SQL" value="255" />
+          <entry key="SQL" value="268" />
           <entry key="XML" value="64" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="150">
               <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
             </state>
           </provider>
@@ -327,17 +162,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
+            <state relative-caret-position="615">
               <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/dao/UsuarioDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="64" column="63" selection-start-line="55" selection-start-column="16" selection-end-line="64" selection-end-column="63" />
+            <state relative-caret-position="17">
+              <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -348,8 +183,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ifpb/control/CadastroServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="28" column="58" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="58" />
+            <state relative-caret-position="185">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -360,7 +195,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/sql/Date.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="1245">
               <caret line="109" column="23" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
             </state>
           </provider>
@@ -369,8 +204,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/banco.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="150">
+              <caret line="10" column="22" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -398,6 +233,7 @@
       <find>re_password</find>
       <find>masculino</find>
       <find>ultimo</find>
+      <find>setId</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -421,11 +257,11 @@
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/conexao/ConnectionException.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/conexao/ConnectionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/entidades/Usuario.java" />
-        <option value="$PROJECT_DIR$/scripts/banco.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/dao/UsuarioDAO.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/edu/ifpb/control/CadastroServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/scripts/banco.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/br/edu/ifpb/control/CadastroServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/dao/UsuarioDAO.java" />
       </list>
     </option>
   </component>
@@ -448,10 +284,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="800" />
-    <option name="height" value="520" />
+    <option name="width" value="1280" />
+    <option name="height" value="719" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -459,6 +295,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -503,21 +340,29 @@
               <item name="loja" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ifpb" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loja" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loja" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558557023602" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558575307921" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -709,18 +554,20 @@
       <option name="presentableId" value="Default" />
       <updated>1558550402506</updated>
       <workItem from="1558550408833" duration="3804000" />
-      <workItem from="1558554488196" duration="2495000" />
+      <workItem from="1558554488196" duration="3971000" />
+      <workItem from="1558618898228" duration="603000" />
+      <workItem from="1558655078618" duration="110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6299000" />
+    <option name="totallyTimeSpent" value="8488000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="800" height="520" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="719" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25593668" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16478191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -730,7 +577,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943925" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1542056" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36682242" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -742,13 +589,14 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.32854864" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.3298153" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3298153" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.32956383" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -767,16 +615,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HelloServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HelloServlet.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1-sources.jar!/javax/servlet/ServletContextListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -784,13 +623,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -798,109 +631,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/UsuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/control/UsuariosController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/includes/PaginaServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/includes/ConteudoPrincipalServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/usuarios.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/InitListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="62" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/UsuarioDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/control/UsuariosController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/includes/PaginaServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/includes/ConteudoPrincipalServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/usuarios.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Usuario.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlet2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/InitListener.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/conexao/ConnectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -919,100 +659,59 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bacba98c-a8c7-4814-81b5-5b5ab571c4ef/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/banco.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/sql/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="109" column="23" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/entidades/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="47" column="38" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="38" />
-          <folding>
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-            <element signature="e#1307#1308#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1449#1450#0" expanded="true" />
-            <element signature="e#1483#1484#0" expanded="true" />
-            <element signature="e#1515#1516#0" expanded="true" />
-            <element signature="e#1543#1544#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#1619#1620#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
-            <element signature="e#1681#1682#0" expanded="true" />
-            <element signature="e#1725#1726#0" expanded="true" />
-            <element signature="e#1761#1762#0" expanded="true" />
-            <element signature="e#1792#1793#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-            <element signature="e#1891#1892#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bacba98c-a8c7-4814-81b5-5b5ab571c4ef/database/loja/schema/public/table/usuarios" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
+        <state relative-caret-position="615">
           <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/dao/UsuarioDAO.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/sql/Date.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="64" column="63" selection-start-line="55" selection-start-column="16" selection-end-line="64" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1245">
+          <caret line="109" column="23" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/banco.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ifpb/control/CadastroServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="28" column="58" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="58" />
+        <state relative-caret-position="185">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ifpb/model/dao/UsuarioDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+        <state relative-caret-position="17">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

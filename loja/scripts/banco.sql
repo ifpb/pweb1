@@ -1,5 +1,5 @@
 CREATE TABLE usuarios (
-    id bigint not null,
+    id serial not null,
     primeiroNome varchar(200) not null,
     ultimoNome varchar(200) not null,
     dataNascimento timestamp not null,
