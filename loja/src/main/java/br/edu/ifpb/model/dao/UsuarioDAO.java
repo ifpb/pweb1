@@ -72,7 +72,7 @@ public class UsuarioDAO {
 	}
 
 	public void criarUsuario(Usuario usuario) throws SQLException {
-		PreparedStatement statement = this.conexao.prepareStatement("INSERT INTO usuarios (primeiroNome, ultimoNome, datanascimento, genero, telefone, senha, email, cidade, pais) VALUES (?,?,?,?,?,?,?,?,?,?) ");
+		PreparedStatement statement = this.conexao.prepareStatement("INSERT INTO usuarios (primeiroNome, ultimoNome, datanascimento, genero, telefone, senha, email, cidade, pais) VALUES (?,?,?,?,?,?,?,?,?) ");
 		statement.setString(1, usuario.getPrimeiroNome());
 		statement.setString(2, usuario.getUltimoNome());
 		statement.setDate(3, usuario.getDataNascimento());
