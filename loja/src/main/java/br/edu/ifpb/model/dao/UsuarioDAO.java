@@ -72,17 +72,16 @@ public class UsuarioDAO {
 	}
 
 	public void criarUsuario(Usuario usuario) throws SQLException {
-		PreparedStatement statement = this.conexao.prepareStatement("INSERT INTO usuarios (id, primeiroNome, ultimoNome, datanascimento, genero, telefone, senha, email, cidade, pais) VALUES (?,?,?,?,?,?,?,?,?,?) ");
-		statement.setLong(1, usuario.getId());
-		statement.setString(2, usuario.getPrimeiroNome());
-		statement.setString(3, usuario.getUltimoNome());
-		statement.setDate(4, usuario.getDataNascimento());
-		statement.setString(5, usuario.getGenero().toString());
-		statement.setString(6, usuario.getTelefone());
-		statement.setString(7, usuario.getSenha());
-		statement.setString(8, usuario.getEmail());
-		statement.setString(9, usuario.getCidade());
-		statement.setString(10, usuario.getPais());
+		PreparedStatement statement = this.conexao.prepareStatement("INSERT INTO usuarios (primeiroNome, ultimoNome, datanascimento, genero, telefone, senha, email, cidade, pais) VALUES (?,?,?,?,?,?,?,?,?,?) ");
+		statement.setString(1, usuario.getPrimeiroNome());
+		statement.setString(2, usuario.getUltimoNome());
+		statement.setDate(3, usuario.getDataNascimento());
+		statement.setString(4, usuario.getGenero().toString());
+		statement.setString(5, usuario.getTelefone());
+		statement.setString(6, usuario.getSenha());
+		statement.setString(7, usuario.getEmail());
+		statement.setString(8, usuario.getCidade());
+		statement.setString(9, usuario.getPais());
 		statement.executeUpdate();
 	}
 
