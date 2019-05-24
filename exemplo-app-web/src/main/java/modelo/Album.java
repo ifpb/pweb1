@@ -53,4 +53,14 @@ public class Album {
 	public void setArquivos(List<String> arquivos) {
 		this.arquivos = arquivos;
 	}
+
+	@Override
+	public String toString() {
+		return "Album{" +
+				"titulo='" + titulo + '\'' +
+				", autor='" + autor + '\'' +
+				", publicado=" + publicado +
+				", arquivos=" + arquivos +
+				'}';
+	}
 }

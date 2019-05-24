@@ -6,11 +6,11 @@ import java.sql.SQLException;
 
 public class ConnectionFactory {
 
-	public static String url = "jdbc:postgresql://localhost:5432/exemplo-app-web";
+	public static String url = "jdbc:postgresql://localhost:5432/PW1";
 	
 	public static String user = "postgres";
 	
-	public static String password = "secret";
+	public static String password = "1234";
 	
 	public ConnectionFactory() {
 	}

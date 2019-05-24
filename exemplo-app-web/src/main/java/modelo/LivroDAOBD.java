@@ -52,7 +52,7 @@ public class LivroDAOBD implements LivroDAO {
 	public Optional<Livro> recuperarPorId(Long id) {
 		Optional<Livro> livro = Optional.empty();
 		try {
-			PreparedStatement statement = this.conexao.prepareStatement("SELECT * FROM livros WHERE id = ?");
+			PreparedStatement statement = this.conexao.prepareStatement("SELECT * FROM livro WHERE id = ?");
 			statement.setLong(1, id);
 			ResultSet resultSet = statement.executeQuery();
 			while(resultSet.next()) {

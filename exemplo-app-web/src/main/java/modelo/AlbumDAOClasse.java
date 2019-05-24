@@ -13,10 +13,13 @@ public class AlbumDAOClasse implements AlbumDAO {
         albuns = new ArrayList();
     }
 
+
+
     public synchronized static AlbumDAO getInstance() {
         if (instance == null) {
             instance = new AlbumDAOClasse();
         }
+
         return instance;
     }
 
