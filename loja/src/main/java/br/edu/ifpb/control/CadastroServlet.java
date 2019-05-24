@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Date;
 import java.sql.SQLException;
+import java.util.List;
 
 @WebServlet("/cadastrar")
 public class CadastroServlet extends HttpServlet  {
@@ -32,6 +33,7 @@ public class CadastroServlet extends HttpServlet  {
 
         try {
             usuarioDAO.criarUsuario(usuario);
+            List<Usuario> usuarios = usuarioDAO.listarUsuarios();
             resp.setHeader("Content-type", "text/html");
             resp.getOutputStream().println("<h1>Usuário cadastrado com sucesso!");
         } catch (SQLException e) {
