@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:form>
+    <h1>Lista de usuários</h1>
+    <h:commandButton value="Adicionar usuário" action="#{usuarioBean.prepareCreate}" />
+        <h:dataTable value="#{usuarioBean.usuarios}" var="usuario">
+            <h:column>
+                <f:facet name="header">Nome</f:facet>
+                <h:outputText value="#{usuario.nome}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Idade</f:facet>
+                <h:outputText value="#{usuario.idade}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">E-mail</f:facet>
+                <h:outputText value="#{usuario.email}" />
+            </h:column>
+            <h:column>
+                <h:commandButton value="Editar" action="#{usuarioBean.prepareUpdate}">
+                    <f:setPropertyActionListener value="#{usuario}" target="#{usuarioBean.usuario}" />
+                </h:commandButton>
+            </h:column>
+            <h:column>
+                <h:commandButton value="Remover" action="#{usuarioBean.prepareRemove}">
+                    <f:setPropertyActionListener value="#{usuario}" target="#{usuarioBean.usuario}" />
+                </h:commandButton>
+            </h:column>
+        </h:dataTable>
+    </h:form>
+</f:view>
+</html>

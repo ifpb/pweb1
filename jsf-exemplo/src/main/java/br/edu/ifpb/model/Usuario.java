@@ -1,5 +1,7 @@
 package br.edu.ifpb.model;
 
+import java.util.Objects;
+
 public class Usuario {
 
     private Long id;
@@ -65,5 +67,24 @@ public class Usuario {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Usuario usuario = (Usuario) o;
+        return Objects.equals(id, usuario.id) &&
+                Objects.equals(nome, usuario.nome) &&
+                Objects.equals(idade, usuario.idade) &&
+                Objects.equals(email, usuario.email) &&
+                Objects.equals(login, usuario.login) &&
+                Objects.equals(senha, usuario.senha) &&
+                Objects.equals(endereco, usuario.endereco);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, nome, idade, email, login, senha, endereco);
     }
 }
