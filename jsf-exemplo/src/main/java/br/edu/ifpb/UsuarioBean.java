@@ -1,17 +1,19 @@
 package br.edu.ifpb;
 
-import br.edu.ifpb.model.Usuario;
-import br.edu.ifpb.service.UsuarioService;
+import java.io.Serializable;
+import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
-import javax.faces.bean.ViewScoped;
-import java.util.List;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.view.ViewScoped;
+
+import br.edu.ifpb.model.Usuario;
+import br.edu.ifpb.service.UsuarioService;
 
 @ManagedBean
 @ViewScoped
-public class UsuarioBean {
+public class UsuarioBean implements Serializable {
 
     public enum UsuarioState { LIST, CREATE, UPDATE, REMOVE }
 
@@ -22,6 +24,9 @@ public class UsuarioBean {
     private Usuario usuario;
 
     private UsuarioState currentState;
+    
+    @ManagedProperty("#{loginBean.login}")
+    private String login;
 
     @PostConstruct
     public void init() {
@@ -89,4 +94,14 @@ public class UsuarioBean {
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
+
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+    
+    
 }

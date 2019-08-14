@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<f:view>
+<h:head>
+	<f:loadBundle basename="i18n.messages" var="msg"/>
+</h:head>
+    <h:body>
+    
+    <h:form>
+    
+    	<h2>Selecione o idioma</h2>
+    	<h:selectOneMenu value="#{idiomaBean.idiomaSelecionado}">
+    		<!-- <f:selectItem itemLabel="Português" itemValue="pt" />
+    		<f:selectItem itemLabel="Inglês"	 itemValue="en" /> -->
+    		<f:selectItems value="#{idiomaBean.idiomasDisponiveis}"></f:selectItems>
+    	</h:selectOneMenu>
+    	<h:commandButton value="ok" action="#{idiomaBean.alterarIdioma}"  />
+    </h:form>
+    
+    <hr />
+    
+    <h:outputFormat value="#{msg['usuario.bemvindo']}">
+    	<f:param value="#{usuarioBean.login}" />
+    </h:outputFormat>
+    
+    <h:form>
+    <h3><h:outputText value="#{msg['usuario.dica']}" /></h3>
+    <p:accordionPanel>
+        <p:tab title="#{msg['usuario.dica.comolistar']}">
+            <h:outputText value="#{msg['usuario.dica.comolistar.desc']}" />
+        </p:tab>
+        <p:tab title="#{msg['usuario.dica.comocriar']}">
+            <h:outputText value="#{msg['usuario.dica.comocrair.desc']}" />
+        </p:tab>
+    </p:accordionPanel>
+
+
+    <h:panelGroup rendered="#{usuarioBean.currentState == 'LIST'}">
+        <ui:include src="usuario-list.xhtml" />
+    </h:panelGroup>
+
+    <h:panelGroup rendered="#{usuarioBean.currentState == 'CREATE' or usuarioBean.currentState == 'UPDATE'}">
+        <ui:include src="usuario-form.xhtml" />
+    </h:panelGroup>
+
+    <h:panelGroup rendered="#{usuarioBean.currentState == 'REMOVE'}">
+        <ui:include src="usuario-remove.xhtml" />
+    </h:panelGroup>
+    </h:form>
+    </h:body>
+</f:view>
+</html>
