@@ -12,14 +12,32 @@
     <h:body>
     
     <h:form>
-    
     	<h2>Selecione o idioma</h2>
-    	<h:selectOneMenu value="#{idiomaBean.idiomaSelecionado}">
+    	<p:selectOneRadio value="#{idiomaBean.idiomaSelecionado}">
+    		<p:ajax update="@all" event="change" listener="#{idiomaBean.alterarIdioma}" />
     		<!-- <f:selectItem itemLabel="Português" itemValue="pt" />
     		<f:selectItem itemLabel="Inglês"	 itemValue="en" /> -->
     		<f:selectItems value="#{idiomaBean.idiomasDisponiveis}"></f:selectItems>
-    	</h:selectOneMenu>
-    	<h:commandButton value="ok" action="#{idiomaBean.alterarIdioma}"  />
+    	</p:selectOneRadio>
+    </h:form>
+    
+    <hr />
+    
+    <h2><h:outputText value="#{msg['usuario.administrador']}" /></h2>
+    
+    <p:growl globalOnly="false" autoUpdate="true" />
+    
+    <h:form id="form">
+    
+    	<p:selectManyCheckbox converter="usuariosConverter" value="#{usuarioBean.administradores}">
+    		<p:ajax update="@all" event="change" listener="#{usuarioBean.calcularMedia()}" />
+    		<f:selectItems value="#{usuarioBean.usuariosDisponiveis}" />
+    	</p:selectManyCheckbox>
+    	
+    	<br />
+    	<h:outputText value="#{msg['usuario.media']}:"></h:outputText>
+    	<h:outputText id="media" value="#{usuarioBean.media}" />
+    	
     </h:form>
     
     <hr />

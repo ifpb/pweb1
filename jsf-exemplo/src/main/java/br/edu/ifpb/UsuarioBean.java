@@ -1,11 +1,16 @@
 package br.edu.ifpb;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.OptionalDouble;
+import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
+import javax.faces.model.SelectItem;
 import javax.faces.view.ViewScoped;
 
 import br.edu.ifpb.model.Usuario;
@@ -25,18 +30,33 @@ public class UsuarioBean implements Serializable {
 
     private UsuarioState currentState;
     
+    private List<Usuario> administradores;
+    
+    private List<SelectItem> usuariosDisponiveis;
+    
+    private Double media = 0.0;
+    
     @ManagedProperty("#{loginBean.login}")
     private String login;
 
     @PostConstruct
     public void init() {
+    	administradores = new ArrayList<>();
         usuarioService = new UsuarioService();
         list();
     }
 
     public void list() {
         this.usuarios = usuarioService.listUsuarios();
+        this.usuariosDisponiveis = this.usuarios.stream().map( item -> new SelectItem(item, item.getNome())).collect(Collectors.toList());
         this.currentState = UsuarioState.LIST;
+    }
+    
+    public void calcularMedia() {
+    	OptionalDouble media = administradores.stream().mapToInt(usuario -> usuario.getIdade()).average();
+    	if (media.isPresent()) {
+        	this.media = media.getAsDouble();
+    	}
     }
 
     public void prepareCreate() {
@@ -102,6 +122,31 @@ public class UsuarioBean implements Serializable {
 	public void setLogin(String login) {
 		this.login = login;
 	}
-    
-    
+
+	public List<Usuario> getAdministradores() {
+		return administradores;
+	}
+
+	public void setAdministradores(List<Usuario> administradores) {
+		this.administradores = administradores;
+	}
+
+	public List<SelectItem> getUsuariosDisponiveis() {
+		return usuariosDisponiveis;
+	}
+
+	public void setUsuariosDisponiveis(List<SelectItem> usuariosDisponiveis) {
+		this.usuariosDisponiveis = usuariosDisponiveis;
+	}
+
+	public Double getMedia() {
+		return media;
+	}
+
+	public void setMedia(Double media) {
+		this.media = media;
+	}
+	
+	
+	
 }
