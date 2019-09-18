@@ -34,6 +34,8 @@ A nota final será computado através da média das avaliações:
 * Avaliação III (Prova Escrita 2)
 * Avaliação IV (Projeto 2)
 
+* [Final](final/final.md)
+
 ## Bibliografia
 
 ### Bibliografia Básica
