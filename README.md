@@ -17,7 +17,7 @@
 
 ## Comunicação
 
-Toda a comunicação será realizada usando o [![Slack Status](https://ifpb.herokuapp.com/badge.svg)](https://ifpb.herokuapp.com/) no canal `#ads-pweb1-20191`.
+Toda a comunicação será realizada usando o [![Slack Status](https://ifpb.herokuapp.com/badge.svg)](https://ifpb.herokuapp.com/) no canal `#ads-pweb1-2019-2`.
 
 
 ## Conteúdo e Planejamento de aulas
