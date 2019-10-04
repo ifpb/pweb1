@@ -22,8 +22,7 @@ Toda a comunicação será realizada usando o [![Slack Status](https://ifpb.hero
 
 ## Conteúdo e Planejamento de aulas
 
-* [Acessar Planejamento de Aulas](https://trello.com/b/lAqeAHKi/pweb1-planejamento-de-aulas)
-* [Acessar ambiente no Google Classroom](https://classroom.google.com/u/2/c/MzYyODY4NDI5OTBa)
+* [Acessar ambiente no Google Classroom](https://classroom.google.com/u/3/c/MzgzOTAyODk5NjRa)
 
 ## Avaliações
 
@@ -33,8 +32,6 @@ A nota final será computado através da média das avaliações:
 * Avaliação II (Projeto 1)
 * Avaliação III (Prova Escrita 2)
 * Avaliação IV (Projeto 2)
-
-* [Final](final/final.md)
 
 ## Bibliografia
 
