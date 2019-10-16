@@ -7,11 +7,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.edu.ifpb.pweb1.model.Livro;
 import br.edu.ifpb.pweb1.model.LivroDAO;
+import br.edu.ifpb.pweb1.model.LivroDAOBD;
 
 public class LivrosController implements Command {
 
 	public void execute(HttpServletRequest req, HttpServletResponse resp) throws Exception {
-		LivroDAO livroDAO = new LivroDAO();
+		LivroDAO livroDAO = new LivroDAOBD();
 		List<Livro> livros = livroDAO.listarLivros();
 		req.setAttribute("livros", livros);
 		req.getRequestDispatcher("livros.jsp").forward(req, resp);
