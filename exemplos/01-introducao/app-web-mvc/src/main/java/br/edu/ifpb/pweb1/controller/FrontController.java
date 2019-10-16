@@ -1,5 +1,6 @@
 package br.edu.ifpb.pweb1.controller;
 
+import java.awt.datatransfer.StringSelection;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -19,7 +20,9 @@ public class FrontController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
-			String nomeComando = req.getParameter("comando");
+			String nomeComando = req.getRequestURI().split("/")[2];
+			nomeComando += "Controller";
+			nomeComando = String.valueOf(nomeComando.charAt(0)).toUpperCase() + nomeComando.substring(1, nomeComando.length());
 			Command comando = (Command) Class.forName("br.edu.ifpb.pweb1.controller."+nomeComando).newInstance();
 			comando.execute(req, resp);
 		} catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
