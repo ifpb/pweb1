@@ -33,7 +33,7 @@
 </head>
 <body>
 	
-	<form method="post" action="inscricao">
+	<form method="post" action="inscricao" enctype="multipart/form-data">
 	
 		<label>Nome: </label>
 		<input type="text" name="nome" />
@@ -49,6 +49,9 @@
 			<option value="CE">Ceará</option>
 			<option value="PE">Pernambuco</option>
 		</select>
+		
+		<label>Foto: </label>
+		<input type="file" name="foto" />
 		
 		<button type="submit">Enviar</button>
 	
