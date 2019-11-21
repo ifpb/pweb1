@@ -20,7 +20,7 @@ public class LoginServlet extends HttpServlet {
 		if (login.equals("admin") && senha.equals("admin")) {
 			HttpSession session = req.getSession();
 			session.setAttribute("usuarioLogado", login);
-			resp.sendRedirect("inicial.jsp");
+			resp.sendRedirect("restrito/inicial.jsp");
 		} else {
 			resp.sendError(401);
 		}
