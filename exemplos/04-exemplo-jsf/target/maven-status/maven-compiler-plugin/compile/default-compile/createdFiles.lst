@@ -1,0 +1,5 @@
+br/edu/ifpb/pweb1/entidades/Produto.class
+br/edu/ifpb/pweb1/model/ProdutoDAOImpl.class
+br/edu/ifpb/pweb1/model/Conexao.class
+br/edu/ifpb/pweb1/model/DAOFactory.class
+br/edu/ifpb/pweb1/model/ProdutoDAO.class
