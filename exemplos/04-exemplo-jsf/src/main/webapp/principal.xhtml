@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<f:view />
+<ui:composition template="WEB-INF/template.xhtml">
+	<ui:define name="principal">
+		<h1>Olá #{loginBean.login}, seja bem-vindo à página principal</h1>
+		<h:panelGroup rendered="#{loginBean.papelSelecionado != null}">
+		<h2>Seu papel é: #{loginBean.papelSelecionado}</h2>
+		</h:panelGroup>
+		<h:panelGroup rendered="#{loginBean.papelSelecionado == null}">
+			<h2>Você não selecionou nenhum papel</h2>
+		</h:panelGroup>
+	</ui:define>
+	<ui:define name="rodape">
+		<p>Copyright IFPB - 2019 - Página principal</p>
+	</ui:define>
+</ui:composition>
+</html>

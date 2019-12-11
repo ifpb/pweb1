@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<head>
+<meta charset="UTF-8" />
+<title>Olá mundo!</title>
+</head>
+<f:view>
+<style type="text/css">
+
+.selecionado {
+	font-weight: bold;
+	color: #449944;
+}
+
+</style>
+<body>
+	<h1>Olá, bem-vindo ao exemplo JSF</h1>
+	<h:form>
+	<h2>Selecione um papel</h2>
+	<ul>
+		<ui:repeat var="papel" value="#{loginBean.papeis}">
+			<li>
+			<h:commandLink value="#{papel}" styleClass="#{papel eq loginBean.papelSelecionado ? 'selecionado':''}">
+				<f:setPropertyActionListener value="#{papel}" target="#{loginBean.papelSelecionado}"></f:setPropertyActionListener>
+			</h:commandLink>
+			</li>
+		</ui:repeat>
+	</ul>
+	</h:form>
+	
+	<h:form>
+	
+		<h:panelGroup rendered="#{loginBean.login eq 'admin'}">
+			<div style="width: 100%; padding: 10px; background: #c0c0c0; border: 1px solid #ff3820">
+			<h:outputText value="Carregado o login padrão "/>
+			</div>
+		</h:panelGroup>
+		
+		<h:panelGrid columns="3">
+	
+		<h:outputLabel value="Login: " />
+		<h:inputText valueChangeListener="#{loginBean.loginNaoPadrao}" value="#{loginBean.login}" id="login" required="true" requiredMessage="Login obrigatório" />
+		<h:message for="login" />
+		
+		<h:outputLabel value="Senha: " />
+		<h:inputSecret value="#{loginBean.senha}" id="senha" required="true" requiredMessage="Senha obrigatória" />
+		<h:message for="senha"></h:message>
+		
+		<h:commandButton action="#{loginBean.efetuarLogin}" value="Enviar" />
+		
+		</h:panelGrid>
+		
+	</h:form>
+
+	
+	
+</body>
+</f:view>
+</html>

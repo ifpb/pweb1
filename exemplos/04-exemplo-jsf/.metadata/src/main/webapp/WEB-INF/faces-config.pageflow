@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15760920062490" configfile="/exemplo-jsf/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" id="pf157609444617415" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf157609444617416" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" id="pf157609444617417" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf157609444974520 pf157609444974521" inlinks="pf157609444617416" path="index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="principal.xhtml" id="pf157609444974522" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf157609444974520" path="principal.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="erro.xhtml" id="pf157609444974523" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf157609444974521" path="erro.xhtml"/>
+  <links id="pf157609444617416" target="pf157609444617417" source="pf157609444617415" outcome="login"/>
+  <links id="pf157609444974520" target="pf157609444974522" source="pf157609444617417" outcome="sucesso"/>
+  <links id="pf157609444974521" target="pf157609444974523" source="pf157609444617417" outcome="erro"/>
+</pageflow:Pageflow>
