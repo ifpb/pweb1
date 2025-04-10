@@ -19,6 +19,9 @@ export interface Props {
 
 export const getHTML = async (code: string, settings: Partial<Options>) => {
   const hAST = toHast(remark().parse(code), { allowDangerousHtml: true });
+  if (!hAST) {
+    throw new Error('Failed to convert MDAST to HAST.');
+  }
   await rehypePrettyCode(settings)(hAST);
   return toHtml(hAST, { allowDangerousHtml: true });
 };
