@@ -1,0 +1,143 @@
+---
+title: HTML - Elementos Textuais
+---
+
+import CodeTree from '../../../../components/CodeTree.astro';
+import CodePreview from '../../../../components/CodePreview.astro';
+import HtmlPreview from '../../../../components/HtmlPreview.astro';
+import CodeHtmlPreview from '../../../../components/CodeHtmlPreview.astro';
+
+export const imageCodeTree = ``;
+
+# {frontmatter.title}
+
+
+## 🧱 Cabeçalhos
+
+HTML possui seis níveis de cabeçalhos, usados para indicar a importância do conteúdo.
+
+```html
+
+```
+<CodeHtmlPreview
+  src="/codes/html/textual-elements/headers"
+  onlyBody={false}
+/>
+---
+
+## 📄 Parágrafos
+
+Para criar um parágrafo, usamos a tag `<p>`. Cada parágrafo aparece em uma nova linha.
+
+<CodeHtmlPreview
+  src="/codes/html/textual-elements/p"
+  onlyBody={false}
+/>
+
+---
+
+## 🔠 Negrito e Itálico
+
+- `<b>` ou `<strong>` para **negrito**
+- `<i>` ou `<em>` para *itálico*
+
+<CodeHtmlPreview
+  src="/codes/html/textual-elements/b"
+  onlyBody={false}
+/>
+
+---
+
+## 🔢 Sobrescrito e Subscrito
+
+- `<sup>` para sobrescrito (como expoentes)
+- `<sub>` para subscrito (como fórmulas químicas)
+
+<CodeHtmlPreview
+  src="/codes/html/textual-elements/sub"
+  onlyBody={false}
+/>
+---
+
+## 🧊 Espaço em Branco
+
+O navegador ignora múltiplos espaços ou quebras de linha. Para espaços extras, use `&nbsp;`.
+
+
+<CodeHtmlPreview
+  src="/codes/html/textual-elements/whitespace"
+  onlyBody={false}
+/>
+
+
+---
+
+## ↩️ Quebra de Linha e Barra Horizontal
+
+- `<br />` insere uma **quebra de linha**
+- `<hr />` insere uma **linha horizontal de separação**
+
+<CodeHtmlPreview
+  src="/codes/html/textual-elements/hr"
+  onlyBody={false}
+/>
+
+---
+
+## 🧠 Marcação Semântica
+
+Tags que dão significado ao conteúdo:
+
+<CodeHtmlPreview
+  src="/codes/html/textual-elements/semantica"
+  onlyBody={false}
+/>
+
+
+---
+
+## 🔤 Abreviações e Siglas
+
+Use `<abbr>` para indicar abreviações. O atributo `title` mostra o significado completo.
+
+<CodeHtmlPreview
+  src="/codes/html/textual-elements/abbr"
+  onlyBody={false}
+/>
+
+---
+
+## 📚 Citações e Definições
+
+- `<cite>` para títulos de livros/artigos
+- `<dfn>` para definir um novo termo
+
+<CodeHtmlPreview
+  src="/codes/html/textual-elements/cite"
+  onlyBody={false}
+/>
+
+---
+
+## 🏢 Endereço de Contato
+
+Use `<address>` para mostrar informações de contato.
+
+<CodeHtmlPreview
+  src="/codes/html/textual-elements/address"
+  onlyBody={false}
+/>
+
+
+---
+
+## 🧩 Juntando Tudo
+
+Todos esses elementos podem ser combinados para montar uma página completa e bem estruturada.
+
+---
+
+## 📌 Resumo
+
+- HTML utiliza elementos como `<h1>`, `<p>`, `<strong>`, etc. para definir estrutura e significado.
+- Marcação semântica melhora a **acessibilidade**, a **organização** e o **significado** do conteúdo.

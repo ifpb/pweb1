@@ -1,39 +1,64 @@
 ---
 layout: ../layouts/MarkDownLayout.astro
-title: Linguagem de Marcação
+title: Programação para Web 1
 ---
 
 import { SUBJECT } from '../consts.js'
 
 # {frontmatter.title}
 
-<img src="imgs/lm.png" alt="Banner da disciplina" class="hidden md:block w-full" />
+<img src="imgs/pweb1-es.png" alt="Banner da disciplina" class="hidden md:block w-full" />
 
-A disciplina de [Linguagem de Marcação](docs/plano-de-ensino.pdf) (LM) do Curso Superior de Tecnologia em Sistemas para Internet do IFPB tem como objetivo apresentar ao aluno conceitos sobre desenvolvimento Web Front-end. Sua carga horária apresenta um total de 67 horas aula e será ministrada pelo professor Francisco Dantas e Luiz Carlos Chaves. Para as aulas serão utilizadas exposições e atividades práticas, além de avaliações individuais e em grupo.
+A disciplina de [Programação para Web 1](docs/plano-de-ensino.pdf) (PWEB1) do Curso Superior de Bacharelado em Engenharia de Software
+do IFPB tem como objetivo apresentar os conceitos fundamentais de estruturação, estilização e programação de aplicações Web, 
+desenvolvendo um projeto em equipe ao longo da disciplina, com publicação na Web e uso de boas práticas de desenvolvimento. 
+Sua carga horária apresenta um total de 67 horas aula e será ministrada pelo professor Diego Pessoa. 
+Para as aulas serão utilizadas exposições e atividades práticas, além de avaliações individuais e em grupo.
 
 ## Conteúdo
 
 A disciplina apresenta o seguinte conteúdo, que será dividido conforme este [roteiro de aula](classnotes):
 
-- Estrutura da Web
-  - Função do cliente e servidor HTTP
-  - Componentes para construir um sistema Web
-- XML
-  - Definição
-  - Estrutura
-- HTML
-  - Hypertexto
-  - Tag, atributo, Entidades
-  - Estrutura do HTML
-- CSS
-  - Folha de estilo
-  - Herança e cascataß
-  - Seletores, propriedades, funções, media query, at-rules
-  - Definição de layouts e estilos
-  - Animações
-  - Extensões de CSS
+- Unidade 1 - Introdução à Web
+  - Fundamentos de uma aplicação Web
+  - Exibindo a arquitetura da Web entre o cliente e servidor (URL, HTTP, HTML)
+  - Finalidade do HTML e CSS
+- Unidade 2 - HTML Unidade 2 - HTML
+  - Introdução ao HTML
+  - Estrutura de um documento HTML: elementos, atributos e entidades
+  - Estrutura de uma aplicação Web Front End
+  - Títulos, Parágrafos, Marcações de ênfase, Imagens, Listas, Links
+  - Tabela
+  - Formulários
+  - Integrações com serviços Web
+- Unidade 3 - CSS
+  - Introdução ao CSS
+  - Definir o que é uma Linguagem de Estilo
+  - Sintaxe e estrutura do CSS: Seletores, Propriedades, Funções, At-rules e media queries
+  - Cascata e Herança
+  - Estilo de tipografia
+  - Plano de fundo
+  - Box model
+  - Posicionamento de elementos
+  - Layout com CSS
+  - Design Responsivo
+  - Mobile-first
+- Unidade 4 - Práticas com Desenvolvimento para Web
+  - Componentes de Aplicação Web
+  - Introdução aos componentes Web
+  - Criando uma galeria de componentes Web
+  - Reutilizando componentes Web de terceiros
+  - Introdução ao Controle de Versão
+  - Publicando conteúdo estático na Web
+  - Introdução aos servidores Web
+  - Publicar páginas com Github Pages
+- Unidade 5 - Introdução à Programação Web no lado Servidor
+  - Estrutura básica de uma aplicação Web com backend
+  - Criação de rotas, tratamento de requisições e envio de respostas
+  - Integração entre formulários e o servidor para persistência e processamento de dados
+  - Geração dinâmica de páginas Web a partir de dados no servidor
 
-Sobre o código fonte gerados durante as aulas, ele estará disponível no repositório da disciplina ({Object.keys(SUBJECT.GITHUB_URLS).map((github) => (<a href={SUBJECT.GITHUB_URLS[github]} target="_blank">Turma {github}</a>)).reduce((prev, curr) => [prev, ', ', curr])}).
+Sobre o código fonte gerados durante as aulas, ele estará disponível no repositório de códigos da disciplina: <a href={SUBJECT.GITHUB_URL}>{SUBJECT.GITHUB_URL}</a>.
 
 ## Horário e ambiente
 
@@ -42,16 +67,14 @@ As aulas da disciplina serão alocados nesse horário e ambiente:
 <table>
   <thead>
     <tr>
-      <th>Turm</th>
       <th>Dia</th>
       <th>Horário</th>
       <th>Ambiente</th>
     </tr>
   </thead>
   <tbody>
-    {SUBJECT.SCHEDULES.map(({ className, day, start, end, room }) => (
+    {SUBJECT.SCHEDULES.map(({day, start, end, room }) => (
       <tr>
-        <td>Turma {className}</td>
         <td>{day}</td>
         <td>{start}-{end}</td>
         <td>{room}</td>
@@ -66,11 +89,12 @@ A nota final será computada através da média ponderada das três maiores aval
 
 - [Exercícios](https://ifpb.github.io/exercises/):
   - Avaliação I
+  - Avaliação II
 - [Projeto](project) (<a href={SUBJECT.PROJECTS_URL.padlet} target="_blank">padlet</a>, <a href={SUBJECT.PROJECTS_URL.github} target="_blank">ifpb/projects</a>):
-  - Avaliação II: Projeto - Etapa I;
-  - Avaliação III: Projeto - Etapa II.
+  - Avaliação III: Projeto - Etapa I;
+  - Avaliação IV: Projeto - Etapa II.
 
-Estas salas do Google Classroom ({Object.keys(SUBJECT.CLASSROOM_URLS).map((github) => (<a href={SUBJECT.GITHUB_URLS[github]} target="_blank">Turma {github}</a>)).reduce((prev, curr) => [prev, ', ', curr])}) serão utilizadas para enviar todas as avaliações.
+Estas salas do Google Classroom <a href={SUBJECT.CLASSROOM_URL}>{SUBJECT.CLASSROOM_URL}</a> serão utilizadas para enviar todas as avaliações.
 
 ## Comunicação
 
@@ -81,17 +105,23 @@ Toda a comunicação será realizada usando este <a href={SUBJECT.CHAT_URL} targ
 ### Bibliografia Básica
 
 <div class="flex gap-2 flex-col md:flex-row flex-wrap items-center">
-[![CSS e HTML](imgs/books/css-e-html.jpeg)](https://novatec.com.br/livros/csshtml/)
+[<img src="imgs/books/html-css-projete-construa.jpg" alt="HTML & CSS: projete e construa websites" style="height: 200px;" />](https://www.amazon.com.br/HTML-CSS-projete-construa-Websites/dp/8576089394)
 
-[![CSS3](imgs/books/css3.jpeg)](https://novatec.com.br/livros/css3/)
+[<img src="imgs/books/dev-web-flask.jpg" alt="Desenvolvimento Web com Flask" style="height: 200px;" />](https://novatec.com.br/livros/desenvolvimento-web-com-flask)
 
-[![android com html css](imgs/books/android-com-html-css.jpg)](https://novatec.com.br/livros/aplicativos-android-com-html-css/)
+[<img src="imgs/books/controlando-versoes-git-github.jpeg" alt="Controlando Versões com Git e Github" style="height: 200px;" />](https://www.casadocodigo.com.br/products/livro-git-github)
 </div>
-
 ### Bibliografia Complementar
 
 <div class="flex gap-2 flex-col md:flex-row flex-wrap items-center">
+
+[![CSS e HTML](imgs/books/css-e-html.jpeg)](https://novatec.com.br/livros/csshtml/)
+
+[<img src="imgs/books/use-cabeca-html-css.jpg" alt="Use a Cabeça HTML e CSS" style="height: 200px;" />](https://www.amazon.com.br/Use-cabe%C3%A7a-HTML-Elisabeth-Freeman/dp/8576088622)
+
 [![Apostila Caelum](imgs/books/caelum.png)](https://www.caelum.com.br/apostila-html-css-javascript/)
+
+[![CSS3](imgs/books/css3.jpeg)](https://novatec.com.br/livros/css3/)
 
 [![Learn code HTML CSS](imgs/books/learn-code-html-css.png)](https://learn.shayhowe.com/advanced-html-css/)
 
@@ -99,7 +129,6 @@ Toda a comunicação será realizada usando este <a href={SUBJECT.CHAT_URL} targ
 
 [![CSS Reference](imgs/books/mdn.png)](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
-[![Aprendendo XML](imgs/books/xml.jpg)](http://shop.oreilly.com/product/9780596004200.do)
 </div>
 
 E para completar ainda mais a listagem existe estes [exemplares](https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-subjects.md) como outros indicações.

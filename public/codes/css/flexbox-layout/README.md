@@ -219,7 +219,7 @@ Terminology:
 * [The Complete Illustrated Flexbox Tutorial](https://medium.freecodecamp.org/the-complete-illustrated-flexbox-tutorial-d35c085dbf35) 👍
 * [Flexbox — The Animated Tutorial](https://medium.com/@js_tut/flexbox-the-animated-tutorial-8075cbe4c1b2)
 * [CSS Flex—An Interactive Tutorial](https://medium.freecodecamp.org/css-flex-an-interactive-tutorial-19ff6e93558)
-* [Flexbox Playground](https://ifpb.github.io/lm/css-exercises/css/portfolio-initial/)
+* [Flexbox Playground](https://ifpb.github.io/pweb1/css-exercises/css/portfolio-initial/)
 * [Flex Guide](https://flexbox.malven.co/)
 * [Meet the first visual flexbox builder](https://flexbox.webflow.com/)
 * [Flexbox — The Animated Tutorial](https://jstutorial.medium.com/flexbox-the-animated-tutorial-8075cbe4c1b2)
