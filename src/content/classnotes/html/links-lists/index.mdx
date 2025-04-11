@@ -1,0 +1,292 @@
+---
+title: Links, imagens, listas e tabelas
+---
+
+import CodeTree from '../../../../components/CodeTree.astro';
+import CodePreview from '../../../../components/CodePreview.astro';
+import HtmlPreview from '../../../../components/HtmlPreview.astro';
+import CodeHtmlPreview from '../../../../components/CodeHtmlPreview.astro';
+
+export const imageCodeTree = ``;
+
+# {frontmatter.title}
+
+## Listas
+
+As listas são utilizadas para agrupar e organizar itens relacionados. Existem três tipos principais de listas em HTML:
+
+| Tipos              | Tags                   |
+| ------------------ | ---------------------- |
+| Lista ordenada     | `<ol>`, `<li>`         |
+| Lista não ordenada | `<ul>`, `<li>`         |
+| Lista de descrição | `<dl>`, `<dt>`, `<dd>` |
+
+---
+
+### Listas ordenadas
+
+Listas em que cada item é numerado automaticamente. Muito usadas para representar etapas ou cláusulas.
+
+```html
+<ol>
+  <li>Primeiro item</li>
+  <li>Segundo item</li>
+  <li>Terceiro item</li>
+</ol>
+```
+
+É possível especificar o tipo de numeração com o atributo `type`:
+```html
+<ol type="A">
+  <li>Item A</li>
+  <li>Item B</li>
+</ol>
+```
+
+---
+
+### Listas não ordenadas
+
+Usam marcadores (como círculos ou quadrados) ao invés de números.
+
+```html
+<ul>
+  <li>Maçã</li>
+  <li>Banana</li>
+  <li>Laranja</li>
+</ul>
+```
+
+O atributo `type` também pode ser usado para definir o estilo do marcador (não suportado em HTML5):
+
+```html
+<ul type="square">
+  <li>Item com quadrado</li>
+</ul>
+```
+
+---
+
+### Listas de definição
+
+Utilizadas para listar termos e suas definições.
+
+```html
+<dl>
+  <dt>HTML</dt>
+  <dd>Linguagem de marcação para a web.</dd>
+
+  <dt>CSS</dt>
+  <dd>Folhas de estilo em cascata.</dd>
+</dl>
+```
+
+---
+
+### Listas aninhadas
+
+Listas podem conter outras listas:
+
+```html
+<ul>
+  <li>Frutas
+    <ol>
+      <li>Maçã</li>
+      <li>Banana</li>
+    </ol>
+  </li>
+</ul>
+```
+
+---
+
+## Prática: Criando uma página HTML com listas
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo de Listas</title>
+  </head>
+  <body>
+    <h1>Listas em HTML</h1>
+
+    <h2>Lista Ordenada</h2>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ol>
+
+    <h2>Lista Não Ordenada</h2>
+    <ul>
+      <li>Item A</li>
+      <li>Item B</li>
+    </ul>
+
+    <h2>Lista de Definição</h2>
+    <dl>
+      <dt>Termo</dt>
+      <dd>Definição do termo.</dd>
+    </dl>
+  </body>
+</html>
+```
+
+---
+
+
+---
+
+## Links
+
+Links facilitam a navegação na web. Podem apontar para:
+
+- Sites externos
+- Páginas internas
+- Seções da mesma página
+- Abrir em nova aba
+- Enviar e-mail
+
+```html title="Sintaxe Básica"
+<a href="url">content</a>
+```
+
+---
+
+### Link para site externo
+
+```html
+<a href="https://www.exemplo.com">Visitar site externo</a>
+```
+Link externo:
+
+<CodeHtmlPreview
+  src="/codes/html/introduction/hyperlink-external"
+  isShowIframe={false}
+/>
+
+
+---
+
+### Link para páginas internas
+
+
+```plaintext title="Estrutura da URL"
+                                                 query
+ schema      domain   port        path           string   fragment
+┌───┴──┐┌──────┴─────┐┌┴┐┌─────────┴──────────┐┌───┴────┐┌───┴────┐
+https://ifpb.github.io:80/dw/html/introduction/?name=ifpb#hyperlink
+```
+
+Com **URLs relativas**, você pode navegar dentro do seu site.
+
+- **Mesma pasta**:
+
+```html
+<a href="pagina.html">Abrir página</a>
+```
+
+- **Pasta filha**:
+
+```html
+<a href="subpasta/arquivo.html">Ir para subpasta</a>
+```
+
+- **Pasta mãe**:
+
+```html
+<a href="../index.html">Voltar</a>
+```
+
+- **Pasta avó**:
+
+```html
+<a href="../../index.html">Voltar duas pastas</a>
+```
+
+---
+
+### Exemplos
+
+```html
+<a href="index.html">Rever</a>
+<a href="musica/listings.html">Listagens</a>
+<a href="filmes/dvd/reviews.html">Rever DVD</a>
+<a href="../index.html">Página Inicial</a>
+<a href="../../index.html">Página Inicial (2 níveis acima)</a>
+```
+
+<CodeTree src="/codes/html/introduction/hyperlink-pages" />
+
+<CodeHtmlPreview src="/codes/html/introduction/hyperlink-pages" />
+
+<CodeHtmlPreview src="/codes/html/introduction/hyperlink-pages/pages" htmlFile="page.html" />
+
+
+---
+
+### Link de email
+
+```html
+<a href="mailto:contato@exemplo.com">Enviar e-mail</a>
+```
+
+---
+
+### Abrir link em nova aba
+
+<CodeHtmlPreview
+  src="/codes/html/introduction/hyperlink-target"
+  isShowIframe={false}
+/>
+
+---
+
+### Link para parte específica da mesma página
+
+```html
+<a href="#secao1">Ir para a Seção 1</a>
+
+...
+
+<h2 id="secao1">Seção 1</h2>
+```
+
+<CodeHtmlPreview src="/codes/html/introduction/hyperlink-fragment" />
+
+---
+
+### Link para parte específica de outra página
+
+```html
+<a href="outra-pagina.html#topo">Ir para o topo</a>
+```
+
+---
+
+## Prática: Criando uma página HTML com links
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo de Links</title>
+  </head>
+  <body>
+    <h1>Página com Links</h1>
+
+    <a href="sobre.html">Página Sobre</a><br>
+    <a href="mailto:exemplo@email.com">Enviar e-mail</a><br>
+    <a href="#fim">Ir para o fim da página</a>
+
+    <p id="fim">Você chegou ao final!</p>
+  </body>
+</html>
+```
+
+
+### Juntando tudo:
+
+<CodeHtmlPreview src="/codes/html/introduction/list" />
+
+
