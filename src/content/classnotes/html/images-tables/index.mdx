@@ -1,0 +1,206 @@
+---
+title: Imagens e Tabelas
+---
+
+import CodeTree from '../../../../components/CodeTree.astro';
+import CodePreview from '../../../../components/CodePreview.astro';
+import HtmlPreview from '../../../../components/HtmlPreview.astro';
+import CodeHtmlPreview from '../../../../components/CodeHtmlPreview.astro';
+
+export const imageCodeTree = ``;
+
+# {frontmatter.title}
+
+
+# HTML: Imagens e Tabelas
+
+## 📷 Imagens em HTML
+
+### Inserindo Imagens
+
+Use a tag `<img>` para inserir imagens em uma página web.
+<img src="/public/imgs/html/images/quokka.jpeg" width="300" alt="Uma família de quokka" title="O quokka é um marsupial australiano semelhante a um gato doméstico." />
+```html
+<img src="imgs/html/images/quokka.jpeg" alt="Uma família de quokka" title="O quokka é um marsupial australiano semelhante a um gato doméstico." />
+```
+
+**Atributos importantes:**
+
+- `src`: Caminho da imagem.
+- `alt`: Texto alternativo.
+- `title`: Texto exibido ao passar o mouse sobre a imagem.
+
+---
+
+### Especificando Tamanho
+
+Você pode definir a largura e altura da imagem com os atributos `width` e `height`.
+
+<img src="/public/imgs/html/images/quokka.jpeg" width="600" height="450" />
+
+```html
+<img src="images/quokka.jpg" alt="Uma família de quokka" width="600" height="450" />
+```
+
+---
+
+### Posicionamento da Imagem
+
+A posição da imagem no HTML afeta como o texto se alinha a ela:
+
+<p>
+<img src="/public/imgs/html/images/bird.jpg" width="100" height="100" />
+  Existem cerca de 10.000 espécies de aves...
+</p>
+
+```html
+<p>
+  <img src="images/bird.gif" alt="Bird" width="100" height="100" />
+  Existem cerca de 10.000 espécies de aves...
+</p>
+```
+
+---
+
+### Alinhamento com o atributo `align` (obsoleto no HTML5)
+
+```html
+<p>
+  <img src="images/bird.gif" alt="Bird" align="left" />
+  Texto ao lado da imagem alinhada à esquerda.
+</p>
+```
+
+<p>
+<img alt="Bird" align="left" src="/public/imgs/html/images/bird.jpg" width="200" height="200" />
+  Texto ao lado da imagem alinhada à esquerda.
+</p>
+
+<p style="clear: left">* Use **CSS** em vez de `align` para sites modernos.</p>
+
+### Formatos de Imagem
+
+- **JPG/JPEG**: Fotografias e imagens com muitas cores.
+- **GIF/PNG**: Ilustrações com cores sólidas ou transparência.
+- **SVG**: Gráficos vetoriais escaláveis (ainda em adoção).
+
+---
+
+### Resolução e Otimização
+
+- Resolução recomendada para a web: **72 ppi**
+- Reduza o tamanho das imagens sem perder qualidade perceptível.
+
+---
+
+### Figura e Legenda com HTML5
+
+<figure>
+<img alt="Bird" src="/public/imgs/html/images/chocolate.jpg" width="300" height="300" />
+<figcaption>Um bolo de chocolate especial</figcaption>
+</figure>
+```html
+<figure>
+  <img src="images/chocolate.jpg" alt="Um belo bolo de chocolate especial" />
+  <figcaption>Um bolo de chocolate especial</figcaption>
+</figure>
+```
+
+---
+
+## 📊 Tabelas em HTML
+
+### Estrutura Básica
+
+```html
+<table>
+  <tr>
+    <td>15</td>
+    <td>15</td>
+    <td>30</td>
+  </tr>
+</table>
+```
+
+- `<table>`: Início da tabela
+- `<tr>`: Linha
+- `<td>`: Célula de dados
+
+---
+
+### Cabeçalhos
+
+<table>
+  <tr>
+    <th scope="col">Sábado</th>
+    <th scope="col">Domingo</th>
+  </tr>
+</table>
+
+```html
+<table>
+  <tr>
+    <th scope="col">Sábado</th>
+    <th scope="col">Domingo</th>
+  </tr>
+</table>
+```
+
+- `<th>`: Cabeçalho (com `scope="col"` ou `scope="row"`)
+
+---
+
+### Colspan e Rowspan
+
+```html
+<td colspan="2">Geografia</td>
+<td rowspan="2">Filme</td>
+```
+
+---
+
+### Dividindo Tabelas Longas
+
+```html
+<table>
+  <thead> ... </thead>
+  <tbody> ... </tbody>
+  <tfoot> ... </tfoot>
+</table>
+```
+
+---
+
+### Atributos Antigos (não usar em novos projetos)
+
+```html
+<table width="400" cellpadding="10" cellspacing="5">
+```
+
+Substitua por **CSS**:
+
+```css
+table {
+  width: 400px;
+  border-spacing: 5px;
+  padding: 10px;
+}
+```
+
+---
+
+## ✅ Resumo
+
+### Imagens
+
+- Use `<img>` com `src`, `alt`, e `title`.
+- JPEG para fotos, GIF/PNG para gráficos.
+- Otimize o tamanho e a resolução.
+
+### Tabelas
+
+- Use `<table>`, `<tr>`, `<td>`, `<th>`.
+- Use `colspan` e `rowspan` conforme necessário.
+- Use `<thead>`, `<tbody>` e `<tfoot>` para organização.
+- Prefira CSS para estilo e layout.
+
