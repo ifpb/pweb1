@@ -119,3 +119,84 @@ Exemplo:
 - [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color): `<named-color>`, `<hex-color>`, rgb(), rgba(), hsl(), hsla()
 - [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle): deg, rad, grad, turn
 - [`<time>`](https://developer.mozilla.org/en-US/docs/Web/CSS/time): s, ms
+
+
+## Complemento: Fundamentos Visuais e Práticos do CSS
+
+### Pensando em Caixas
+
+Cada elemento HTML é tratado como uma **caixa retangular**. CSS permite controlar:
+
+- Cor e imagem de fundo (`background-color`, `background-image`)
+- Largura e altura (`width`, `height`)
+- Bordas (`border`)
+- Posição (`position`)
+- Espaçamento interno e externo (`padding`, `margin`)
+
+### Regras CSS: Seletores e Declarações
+
+```css
+p {
+  font-family: Arial;
+  color: gray;
+}
+```
+
+- **Seletor**: define quais elementos HTML serão afetados.
+- **Declarações**: compostas por propriedades e valores.
+
+Você pode combinar seletores com vírgulas ou usar hierarquias como `div > p` ou `h1 + p`.
+
+### Como o CSS é Carregado
+
+- **CSS Externo**: `<link rel="stylesheet" href="estilo.css" />`
+- **CSS Interno**: `<style>...</style>` dentro de `<head>`
+- **CSS Inline**: atributo `style=""` diretamente no elemento
+
+### Cascata, Especificidade e `!important`
+
+- A **última regra** aplicada tem prioridade.
+- Quanto **mais específico** o seletor, maior a prioridade.
+- `!important` sobrepõe qualquer outra regra, mesmo específica.
+
+### Herança
+
+Propriedades como `color`, `font-family` e `line-height` **são herdadas** pelos filhos. Outras como `border`, `margin` e `padding` **não são herdadas**.
+
+### Cores
+
+Três formas principais de definir cores:
+
+```css
+/* Nome da cor */
+color: DarkCyan;
+
+/* Hexadecimal */
+color: #ee3e80;
+
+/* RGB */
+color: rgb(100,100,90);
+```
+
+Novas formas com CSS3:
+
+```css
+/* RGBA com transparência */
+color: rgba(100, 100, 90, 0.5);
+
+/* HSL e HSLA */
+color: hsl(0, 100%, 50%);
+color: hsla(0, 100%, 50%, 0.5);
+```
+
+### Contraste e Acessibilidade
+
+Use [Snook Contrast Checker](http://www.snook.ca/technical/colour_contrast/colour.html) para garantir legibilidade.
+
+### Diferenças entre Navegadores
+
+Testar em navegadores diferentes é essencial: Firefox, Chrome, Safari, Edge e versões antigas podem renderizar propriedades CSS de maneira distinta.
+
+Use ferramentas como:
+- [BrowserShots](https://browsershots.org)
+- [CrossBrowserTesting](https://crossbrowsertesting.com)
