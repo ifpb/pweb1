@@ -44,7 +44,7 @@ export const CONTENT_SLUGS = [
   'css/background',
   'css/flexbox-latyout',
   'css/grid-layout',
-  // 'html/web-resource',
+  'html/web-resource',
   // 'web-server/deploy-pages',
   // 'css/responsive-design',
   // 'library/bootstrap',
