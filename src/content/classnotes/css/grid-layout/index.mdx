@@ -41,6 +41,164 @@ Mapa Mental:
 - Grid by Examples ([Examples](https://gridbyexample.com/examples/), [Patterns](https://gridbyexample.com/patterns/))
 - Quackit - Grid Examples ([Photo Gallery](https://www.quackit.com/css/grid/examples/css_grid_photo_gallery_examples.cfm), [Cards](https://www.quackit.com/css/grid/examples/css_grid_card_examples.cfm), [Forms](https://www.quackit.com/css/grid/examples/css_grid_form_examples.cfm), [Website Layout](https://www.quackit.com/css/grid/examples/css_grid_website_layout_examples.cfm), [Grid System](https://www.quackit.com/css/grid/examples/css_12_column_grid_examples.cfm))
 
+# Guia Completo de CSS Grid
+
+CSS Grid é um poderoso sistema de layout bidimensional no CSS que permite criar interfaces complexas com facilidade. Ele oferece controle total sobre colunas e linhas de uma grade, sendo ideal para criar layouts modernos e responsivos.
+
+## 📌 O que é CSS Grid?
+
+CSS Grid é um sistema de layout baseado em linhas e colunas, permitindo posicionar elementos em áreas específicas da grade.
+
+## ✅ Quando Usar
+
+- Layouts de páginas completas (header, sidebar, main, footer).
+- Galerias de imagens.
+- Dashboards com widgets.
+- Listagens com elementos alinhados vertical e horizontalmente.
+
+---
+
+## 🧱 Estrutura Básica
+
+```html
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+</div>
+```
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colunas */
+  gap: 10px;
+}
+```
+
+Visualização
+```
++-----+-----+
+|  1  |  2  |
++-----+-----+
+|  3  |  4  |
++-----+-----+
+```
+
+### Propriedades Principais
+
+1. display: grid
+
+Ativa o sistema de grid no container.
+
+2. grid-template-columns e grid-template-rows
+
+Define o número e tamanho das colunas/linhas.
+
+```
+grid-template-columns: 100px 1fr 2fr;
+grid-template-rows: auto 200px;
+```
+
+3. gap
+Define o espaçamento entre colunas e linhas.
+```
+gap: 20px; /* ou row-gap / column-gap separadamente */
+```
+
+### Posicionamento de Itens
+Exemplo:
+```
+.item1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+```
+Visualização:
+```
++-----------+-----+
+|   item1   |     |
++-----------+-----+
+|  item2    |item3|
++-----------+-----+
+```
+
+### Áreas Nomeadas
+```
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+}
+```
+
+```
+<div class="grid-container">
+  <header class="header">Header</header>
+  <aside class="sidebar">Sidebar</aside>
+  <main class="main">Main</main>
+  <footer class="footer">Footer</footer>
+</div>
+```
+
+```
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+```
+
+```
++---------+------------+
+| Header               |
++---------+------------+
+| Sidebar |   Main     |
++---------+------------+
+| Footer               |
++----------------------+
+```
+
+### Grid Responsivo
+
+```
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+```
+<div class="gallery">
+  <img src="img1.jpg">
+  <img src="img2.jpg">
+  <img src="img3.jpg">
+  <img src="img4.jpg">
+</div>
+```
+
+```css
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+```
+
+### Dicas Importantes
+	* Sempre defina grid-template-columns ou grid-template-areas para controlar o layout.
+	* Combine grid com media queries para criar layouts adaptáveis.
+	* Use ferramentas como [https://cssgrid-generator.netlify.app/](CSS Grid Generator) para facilitar a criação.
+
+
 ## Referências
 
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
