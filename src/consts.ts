@@ -54,8 +54,8 @@ export const CONTENT_SLUGS = [
   'css/transform',
   'css/transition',
   'css/animation',
-  // 'extra/exercises',
-  // 'extra/next-steps',
+  'extra/exercises',
+  'extra/next-steps',
 ];
 
 export const MENU = [
